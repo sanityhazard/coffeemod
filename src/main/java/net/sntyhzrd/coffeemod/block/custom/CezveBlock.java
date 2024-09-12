@@ -12,7 +12,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
 public class CezveBlock extends BaseEntityBlock {
-    public static final VoxelShape SHAPE = Block.box(5, 0, 4.5, 10, 6.25, 9.5);
+    public static final VoxelShape SHAPE = Block.box(5.5, 0, 5.5, 10.5, 5.5, 10.5);
 
     public CezveBlock(Properties pProperties) {
         super(pProperties);
