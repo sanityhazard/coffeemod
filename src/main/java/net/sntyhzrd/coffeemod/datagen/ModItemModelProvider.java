@@ -8,6 +8,7 @@ import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import net.sntyhzrd.coffeemod.CoffeeMod;
+import net.sntyhzrd.coffeemod.item.ModItems;
 
 public class ModItemModelProvider extends ItemModelProvider {
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
@@ -16,7 +17,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-
+        simpleItem(ModItems.ROASTED_COFFEE_BEANS);
+        simpleItem(ModItems.COFFEE_BEANS);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

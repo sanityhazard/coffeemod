@@ -4,7 +4,6 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -12,6 +11,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.sntyhzrd.coffeemod.CoffeeMod;
 import net.sntyhzrd.coffeemod.block.custom.CezveBlock;
+import net.sntyhzrd.coffeemod.block.custom.CoffeeCropBlock;
 import net.sntyhzrd.coffeemod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -23,6 +23,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CEZVE = registerBlock("cezve",
             () -> new CezveBlock(BlockBehaviour.Properties.copy(Blocks.FLOWER_POT).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> COFFEE_BUSH = BLOCKS.register("coffee_crop",
+            () -> new CoffeeCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

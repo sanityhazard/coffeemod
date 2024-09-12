@@ -1,0 +1,58 @@
+{
+  "variants": {
+    "age=0,fully_grown=false": {
+      "model": "coffeemod:block/coffee_stage_0"
+    },
+    "age=0,fully_grown=true": {
+      "model": "coffeemod:block/coffee_stage_0"
+    },
+    "age=1,fully_grown=false": {
+      "model": "coffeemod:block/coffee_stage_1"
+    },
+    "age=1,fully_grown=true": {
+      "model": "coffeemod:block/coffee_stage_1"
+    },
+    "age=2,fully_grown=false": {
+      "model": "coffeemod:block/coffee_stage_2"
+    },
+    "age=2,fully_grown=true": {
+      "model": "coffeemod:block/coffee_stage_2"
+    },
+    "age=3,fully_grown=false": {
+      "model": "coffeemod:block/coffee_stage_3"
+    },
+    "age=3,fully_grown=true": {
+      "model": "coffeemod:block/coffee_stage_3"
+    },
+    "age=4,fully_grown=false": {
+      "model": "coffeemod:block/coffee_stage_4"
+    },
+    "age=4,fully_grown=true": {
+      "model": "coffeemod:block/coffee_stage_4"
+    },
+    "age=5,fully_grown=false": {
+      "model": "coffeemod:block/coffee_stage_5"
+    },
+    "age=5,fully_grown=true": {
+      "model": "coffeemod:block/coffee_stage_5"
+    },
+    "age=6,fully_grown=false": {
+      "model": "coffeemod:block/coffee_stage_6"
+    },
+    "age=6,fully_grown=true": {
+      "model": "coffeemod:block/coffee_stage_6"
+    },
+    "age=7,fully_grown=false": {
+      "model": "coffeemod:block/coffee_stage_7"
+    },
+    "age=7,fully_grown=true": {
+      "model": "coffeemod:block/coffee_stage_7"
+    },
+    "age=8,fully_grown=false": {
+      "model": "coffeemod:block/coffee_stage_8"
+    },
+    "age=8,fully_grown=true": {
+      "model": "coffeemod:block/coffee_stage_8"
+    }
+  }
+}
