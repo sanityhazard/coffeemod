@@ -1,10 +1,14 @@
 package net.sntyhzrd.coffeemod.datagen;
 
+import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -12,6 +16,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import net.sntyhzrd.coffeemod.CoffeeMod;
 import net.sntyhzrd.coffeemod.block.ModBlocks;
+import net.sntyhzrd.coffeemod.block.custom.CezveBlock;
 import net.sntyhzrd.coffeemod.block.custom.CoffeeCropBlock;
 
 import java.util.function.Function;
@@ -23,11 +28,86 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        simpleBlockWithItem(ModBlocks.CEZVE.get(),
-                new ModelFile.UncheckedModelFile(modLoc("block/cezve")));
+//        simpleBlockWithItem(ModBlocks.CEZVE.get(),
+//                new ModelFile.UncheckedModelFile(modLoc("block/cezve")));
         simpleBlockWithItem(ModBlocks.STONE_MORTAR.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/stone_mortar")));
         makeCoffeeCrop(((CropBlock) ModBlocks.COFFEE_BUSH.get()), "coffee_stage_", "coffee_stage_");
+
+        simpleBlockItem(ModBlocks.CEZVE.get(), new ModelFile.UncheckedModelFile(modLoc("block/cezve")));
+        getVariantBuilder(ModBlocks.CEZVE.get())
+                .partialState()
+                    .with(CezveBlock.HAS_WATER, false)
+                    .with(CezveBlock.HAS_COFFEE, false)
+                    .with(CezveBlock.IS_BREWED, false)
+                    .modelForState()
+                    .modelFile(new ModelFile.UncheckedModelFile(
+                            new ResourceLocation(CoffeeMod.MODID, "block/cezve")
+                    ))
+                    .addModel()
+                .partialState()
+                    .with(CezveBlock.HAS_WATER, true)
+                    .with(CezveBlock.HAS_COFFEE, true)
+                    .with(CezveBlock.IS_BREWED, false)
+                    .modelForState()
+                    .modelFile(new ModelFile.UncheckedModelFile(
+                            new ResourceLocation(CoffeeMod.MODID, "block/cezve_with_unbrewed_coffee")
+                    ))
+                    .addModel()
+                .partialState()
+                    .with(CezveBlock.HAS_WATER, true)
+                    .with(CezveBlock.HAS_COFFEE, true)
+                    .with(CezveBlock.IS_BREWED, true)
+                    .modelForState()
+                    .modelFile(new ModelFile.UncheckedModelFile(
+                            new ResourceLocation(CoffeeMod.MODID, "block/cezve_with_brewed_coffee")
+                    ))
+                    .addModel()
+                .partialState()
+                    .with(CezveBlock.HAS_WATER, false)
+                    .with(CezveBlock.HAS_COFFEE, true)
+                    .with(CezveBlock.IS_BREWED, false)
+                    .modelForState()
+                    .modelFile(new ModelFile.UncheckedModelFile(
+                            new ResourceLocation(CoffeeMod.MODID, "block/cezve_with_coffee")
+                    ))
+                    .addModel()
+                .partialState()
+                    .with(CezveBlock.HAS_WATER, true)
+                    .with(CezveBlock.HAS_COFFEE, false)
+                    .with(CezveBlock.IS_BREWED, false)
+                    .modelForState()
+                    .modelFile(new ModelFile.UncheckedModelFile(
+                            new ResourceLocation(CoffeeMod.MODID, "block/cezve_with_water")
+                    ))
+                    .addModel()
+                .partialState()
+                    .with(CezveBlock.HAS_WATER, false)
+                    .with(CezveBlock.HAS_COFFEE, false)
+                    .with(CezveBlock.IS_BREWED, true)
+                    .modelForState()
+                    .modelFile(new ModelFile.UncheckedModelFile(
+                            new ResourceLocation(CoffeeMod.MODID, "block/cezve")
+                    ))
+                    .addModel()
+                .partialState()
+                    .with(CezveBlock.HAS_WATER, true)
+                    .with(CezveBlock.HAS_COFFEE, false)
+                    .with(CezveBlock.IS_BREWED, true)
+                    .modelForState()
+                    .modelFile(new ModelFile.UncheckedModelFile(
+                            new ResourceLocation(CoffeeMod.MODID, "block/cezve")
+                    ))
+                    .addModel()
+                .partialState()
+                    .with(CezveBlock.HAS_WATER, false)
+                    .with(CezveBlock.HAS_COFFEE, true)
+                    .with(CezveBlock.IS_BREWED, true)
+                    .modelForState()
+                    .modelFile(new ModelFile.UncheckedModelFile(
+                            new ResourceLocation(CoffeeMod.MODID, "block/cezve")
+                    ))
+                    .addModel();
     }
 
     public void makeCoffeeCrop(CropBlock block, String modelName, String textureName) {

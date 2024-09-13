@@ -3,6 +3,7 @@ package net.sntyhzrd.coffeemod.datagen.loot;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
@@ -20,8 +21,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        this.dropSelf(ModBlocks.CEZVE.get());
         this.dropSelf(ModBlocks.STONE_MORTAR.get());
+        this.dropOther(ModBlocks.CEZVE.get(), Items.AIR);
 
         LootItemCondition.Builder lootitemcondition$builder1 = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.COFFEE_BUSH.get())

@@ -8,11 +8,15 @@ import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.ShapelessRecipe;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.CompositeModel;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.minecraftforge.registries.RegistryObject;
 import net.sntyhzrd.coffeemod.block.ModBlocks;
+import net.sntyhzrd.coffeemod.block.custom.CezveBlock;
 import net.sntyhzrd.coffeemod.item.ModItems;
 
 import java.util.Set;
@@ -54,6 +58,5 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 ModItems.ROASTED_COFFEE_BEANS.get(), 2f, 100)
                 .unlockedBy(getHasName(ModItems.COFFEE_BEANS.get()), has(ModItems.COFFEE_BEANS.get()))
                 .save(consumer);
-
     }
 }

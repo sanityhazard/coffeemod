@@ -1,7 +1,28 @@
 {
   "variants": {
-    "": {
+    "has_coffee=false,has_water=false,is_brewed=false": {
       "model": "coffeemod:block/cezve"
+    },
+    "has_coffee=false,has_water=false,is_brewed=true": {
+      "model": "coffeemod:block/cezve"
+    },
+    "has_coffee=false,has_water=true,is_brewed=false": {
+      "model": "coffeemod:block/cezve_with_water"
+    },
+    "has_coffee=false,has_water=true,is_brewed=true": {
+      "model": "coffeemod:block/cezve"
+    },
+    "has_coffee=true,has_water=false,is_brewed=false": {
+      "model": "coffeemod:block/cezve_with_coffee"
+    },
+    "has_coffee=true,has_water=false,is_brewed=true": {
+      "model": "coffeemod:block/cezve"
+    },
+    "has_coffee=true,has_water=true,is_brewed=false": {
+      "model": "coffeemod:block/cezve_with_unbrewed_coffee"
+    },
+    "has_coffee=true,has_water=true,is_brewed=true": {
+      "model": "coffeemod:block/cezve_with_brewed_coffee"
     }
   }
 }

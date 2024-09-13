@@ -2,6 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "coffeemod:block/cezve",
+		"1": "coffeemod:block/water",
 		"particle": "coffeemod:block/cezve"
 	},
 	"elements": [
@@ -172,6 +173,19 @@
 				"west": {"uv": [9.5, 9.5, 10, 10], "texture": "#0"},
 				"up": {"uv": [7.5, 9.5, 5.5, 9], "texture": "#0"},
 				"down": {"uv": [9.5, 9, 7.5, 9.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [6.75, 0, 6.75],
+			"to": [9.25, 2.25, 9.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 7]},
+			"faces": {
+				"north": {"uv": [0, 0, 2.5, 2.25], "texture": "#1"},
+				"east": {"uv": [0, 0, 2.5, 2.25], "texture": "#1"},
+				"south": {"uv": [0, 0, 2.5, 2.25], "texture": "#1"},
+				"west": {"uv": [0, 0, 2.5, 2.25], "texture": "#1"},
+				"up": {"uv": [0, 0, 2.5, 2.5], "texture": "#1"},
+				"down": {"uv": [0, 0, 2.5, 2.5], "texture": "#1"}
 			}
 		}
 	],
