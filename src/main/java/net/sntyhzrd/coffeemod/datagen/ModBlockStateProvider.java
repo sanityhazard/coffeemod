@@ -1,5 +1,6 @@
 package net.sntyhzrd.coffeemod.datagen;
 
+import net.minecraft.client.model.Model;
 import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -28,13 +29,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-//        simpleBlockWithItem(ModBlocks.CEZVE.get(),
-//                new ModelFile.UncheckedModelFile(modLoc("block/cezve")));
         simpleBlockWithItem(ModBlocks.STONE_MORTAR.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/stone_mortar")));
+
         makeCoffeeCrop(((CropBlock) ModBlocks.COFFEE_BUSH.get()), "coffee_stage_", "coffee_stage_");
 
-        simpleBlockItem(ModBlocks.CEZVE.get(), new ModelFile.UncheckedModelFile(modLoc("block/cezve")));
+        simpleBlockItem(ModBlocks.CEZVE.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/cezve")));
+
+        simpleBlockWithItem(ModBlocks.COFFEE_CUP.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/coffee_cup")));
+
+        simpleBlock(ModBlocks.FILLED_COFFEE_CUP.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/filled_coffee_cup")));
+
         getVariantBuilder(ModBlocks.CEZVE.get())
                 .partialState()
                     .with(CezveBlock.HAS_WATER, false)

@@ -22,6 +22,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.STONE_MORTAR.get());
+        this.dropSelf(ModBlocks.COFFEE_CUP.get());
+
+        this.dropOther(ModBlocks.FILLED_COFFEE_CUP.get(), ModItems.FILLED_COFFEE_CUP.get());
         this.dropOther(ModBlocks.CEZVE.get(), Items.AIR);
 
         LootItemCondition.Builder lootitemcondition$builder1 = LootItemBlockStatePropertyCondition

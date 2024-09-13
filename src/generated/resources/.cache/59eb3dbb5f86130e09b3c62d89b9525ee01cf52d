@@ -1,4 +1,6 @@
-// 1.20.1	2024-09-13T22:36:50.4950007	Loot Tables
+// 1.20.1	2024-09-14T02:27:56.3084976	Loot Tables
 0ede3bdf3b44ac9592f6d96cf9f2b1c4424e7407 data/coffeemod/loot_tables/blocks/cezve.json
 d0cc35ca97a44adf53b36a3593d7a2a55c818b94 data/coffeemod/loot_tables/blocks/coffee_crop.json
+f51a5772464067746013fc832d151bfb096081fa data/coffeemod/loot_tables/blocks/coffee_cup_block.json
+588a2f5c03cb006b679c58502dc70085d0812e5e data/coffeemod/loot_tables/blocks/filled_coffee_cup_block.json
 9f446590c3bdb96e3d783f7b69eff5868d402f5b data/coffeemod/loot_tables/blocks/stone_mortar.json

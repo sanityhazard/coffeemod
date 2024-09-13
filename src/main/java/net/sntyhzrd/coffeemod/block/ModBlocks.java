@@ -10,9 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.sntyhzrd.coffeemod.CoffeeMod;
-import net.sntyhzrd.coffeemod.block.custom.CezveBlock;
-import net.sntyhzrd.coffeemod.block.custom.CoffeeCropBlock;
-import net.sntyhzrd.coffeemod.block.custom.StoneMortarBlock;
+import net.sntyhzrd.coffeemod.block.custom.*;
 import net.sntyhzrd.coffeemod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -30,6 +28,12 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> COFFEE_BUSH = BLOCKS.register("coffee_crop",
             () -> new CoffeeCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+
+    public static final RegistryObject<Block> COFFEE_CUP = registerBlock("coffee_cup_block",
+            () -> new CoffeeCupBlock(BlockBehaviour.Properties.copy(Blocks.FLOWER_POT).noOcclusion()));
+
+    public static final RegistryObject<Block> FILLED_COFFEE_CUP = registerBlock("filled_coffee_cup_block",
+            () -> new FilledCoffeeCupBlock(BlockBehaviour.Properties.copy(Blocks.FLOWER_POT).noOcclusion()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

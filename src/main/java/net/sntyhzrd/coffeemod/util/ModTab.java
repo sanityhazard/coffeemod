@@ -2,6 +2,8 @@ package net.sntyhzrd.coffeemod.util;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.flag.FeatureElement;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -14,6 +16,8 @@ import net.sntyhzrd.coffeemod.CoffeeMod;
 import net.sntyhzrd.coffeemod.block.ModBlocks;
 import net.sntyhzrd.coffeemod.item.ModItems;
 
+import java.util.List;
+
 public class ModTab {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CoffeeMod.MODID);
@@ -24,13 +28,16 @@ public class ModTab {
                     .title(Component.translatable("tabs.coffeemod.coffee_tab"))
                     .icon(() -> new ItemStack(ModBlocks.CEZVE.get()))
                     .displayItems((itemDisplayParameters, output) -> {
-                        for (RegistryObject<Item> item : ModItems.ITEMS.getEntries()) {
-                            output.accept(item.get());
-                        }
+                        output.accept(ModItems.COFFEE_BEANS.get());
+                        output.accept(ModItems.ROASTED_COFFEE_BEANS.get());
+                        output.accept(ModItems.GROUND_COFFEE.get());
+                        output.accept(ModItems.PESTLE.get());
+                        output.accept(ModItems.FILLED_COFFEE_CUP.get());
 
-                        for (RegistryObject<Block> block : ModBlocks.BLOCKS.getEntries()) {
-                            output.accept(block.get());
-                        }
+                        output.accept(ModBlocks.CEZVE.get());
+                        output.accept(ModBlocks.STONE_MORTAR.get());
+                        output.accept(ModBlocks.COFFEE_BUSH.get());
+                        output.accept(ModBlocks.COFFEE_CUP.get());
                     })
                     .build()
     );

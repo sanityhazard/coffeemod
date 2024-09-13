@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "coffeemod:block/filled_coffee_cup"
+    }
+  }
+}
