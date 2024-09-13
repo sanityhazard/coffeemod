@@ -8,6 +8,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.sntyhzrd.coffeemod.CoffeeMod;
 import net.sntyhzrd.coffeemod.block.ModBlocks;
+import net.sntyhzrd.coffeemod.item.custom.PestleItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -18,6 +19,13 @@ public class ModItems {
 
     public static final RegistryObject<Item> ROASTED_COFFEE_BEANS = ITEMS.register("roasted_coffee_beans",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> GROUND_COFFEE = ITEMS.register("ground_coffee",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PESTLE = ITEMS.register("pestle",
+            () -> new PestleItem(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

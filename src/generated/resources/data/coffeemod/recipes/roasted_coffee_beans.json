@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 2.0,
+  "ingredient": {
+    "item": "coffeemod:coffee_beans"
+  },
+  "result": "coffeemod:roasted_coffee_beans"
+}

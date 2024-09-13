@@ -2,8 +2,11 @@
   "item.coffeemod.cezve": "Cezve",
   "item.coffeemod.coffee_beans": "Coffee Beans",
   "item.coffeemod.roasted_coffee_beans": "Roasted Coffee Beans",
+  "item.coffeemod.ground_coffee": "Ground Coffee",
+  "item.coffeemod.pestle": "Stone Pestle",
 
   "block.coffeemod.cezve": "Cezve",
+  "block.coffeemod.stone_mortar": "Stone Mortar",
 
   "tabs.coffeemod.coffee_tab": "CoffeeMod Items"
 }

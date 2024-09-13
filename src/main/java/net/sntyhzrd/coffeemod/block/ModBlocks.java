@@ -12,6 +12,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.sntyhzrd.coffeemod.CoffeeMod;
 import net.sntyhzrd.coffeemod.block.custom.CezveBlock;
 import net.sntyhzrd.coffeemod.block.custom.CoffeeCropBlock;
+import net.sntyhzrd.coffeemod.block.custom.StoneMortarBlock;
 import net.sntyhzrd.coffeemod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -23,6 +24,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CEZVE = registerBlock("cezve",
             () -> new CezveBlock(BlockBehaviour.Properties.copy(Blocks.FLOWER_POT).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> STONE_MORTAR = registerBlock("stone_mortar",
+            () -> new StoneMortarBlock(BlockBehaviour.Properties.copy(Blocks.FLOWER_POT).instabreak().noOcclusion()));
 
     public static final RegistryObject<Block> COFFEE_BUSH = BLOCKS.register("coffee_crop",
             () -> new CoffeeCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));

@@ -1,6 +1,7 @@
-// 1.20.1	2024-09-13T00:35:30.8775679	Block States: coffeemod
+// 1.20.1	2024-09-13T04:02:05.9944438	Block States: coffeemod
 47b6dd55b2b890c1e142164c3c7799736c54efaf assets/coffeemod/blockstates/cezve.json
 94f78d61c24e5c9894517c3a1da092593e91cd29 assets/coffeemod/blockstates/coffee_crop.json
+f2183ef6f6bfc351dc3f72ce091a1eb87161502e assets/coffeemod/blockstates/stone_mortar.json
 82c4cf3720469beb97c6e908817c19390ee1e4de assets/coffeemod/models/block/coffee_stage_0.json
 95c56c0799682637aa3bbdd6ced5219d5b7c60f6 assets/coffeemod/models/block/coffee_stage_1.json
 4aa8cac6b428136e48080cd76e4a2eda61aca563 assets/coffeemod/models/block/coffee_stage_2.json
@@ -11,3 +12,4 @@ d4f46c776126d8c4d13d223c1dd30ae3fc332b9a assets/coffeemod/models/block/coffee_st
 b123d5fa6b919ba897e44e8c043019a46b4d2cba assets/coffeemod/models/block/coffee_stage_7.json
 2aa177032fa2381edd13841657a752fad5e5b619 assets/coffeemod/models/block/coffee_stage_8.json
 e62adfc43db0c815694ac61331b0a1b3292df7b1 assets/coffeemod/models/item/cezve.json
+441e87c8c95c655ab02144410bb26120871babef assets/coffeemod/models/item/stone_mortar.json

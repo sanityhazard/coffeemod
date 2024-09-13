@@ -1,1 +1,9 @@
-// 1.20.1	2024-09-12T19:09:52.1108311	Recipes
+// 1.20.1	2024-09-13T04:53:26.2901971	Recipes
+694adef8c89f58b21e9b85485f32284b782ea5ba data/coffeemod/advancements/recipes/food/roasted_coffee_beans.json
+557b5c50c87106c8b9ad581dc12ed98a6277d53d data/coffeemod/advancements/recipes/misc/cezve.json
+9698737e05dbddc160cfa454b277d48c50e50295 data/coffeemod/advancements/recipes/misc/pestle.json
+8a9a3acab0578808057078057401f4e34ecc754e data/coffeemod/advancements/recipes/misc/stone_mortar.json
+2d7e7a9492e9c9242597974b9420df4b6001a325 data/coffeemod/recipes/cezve.json
+32e6cda0cbdb1661872b3b22640f8ab8d79c8085 data/coffeemod/recipes/pestle.json
+dc0479c1612f270404160de1d66f267aa9a1478e data/coffeemod/recipes/roasted_coffee_beans.json
+96c330cd8ca4957dd713d748dad9462309b572ad data/coffeemod/recipes/stone_mortar.json

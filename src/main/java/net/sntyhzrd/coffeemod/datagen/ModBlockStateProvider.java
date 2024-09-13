@@ -25,6 +25,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         simpleBlockWithItem(ModBlocks.CEZVE.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/cezve")));
+        simpleBlockWithItem(ModBlocks.STONE_MORTAR.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/stone_mortar")));
         makeCoffeeCrop(((CropBlock) ModBlocks.COFFEE_BUSH.get()), "coffee_stage_", "coffee_stage_");
     }
 
